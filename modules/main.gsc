@@ -1,14 +1,6 @@
-#precache("lui_menu_data", "frontend")
+#using scripts\zm\modules\xp_system;
 
 function init()
 {
-    level thread boot_frontend();
-}
-
-function boot_frontend()
-{
-    wait 2;
-
-    // force frontend to rebuild using your override
-    Engine.Exec("openmenu frontend");
+    level thread xp_system::init();
 }
