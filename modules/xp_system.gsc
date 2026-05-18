@@ -1,19 +1,9 @@
 #using scripts\zm\modules\xp_hud;
-#using scripts\codescripts\struct;
-
-#using scripts\shared\system_shared;
-#using scripts\shared\util_shared;
-
-#insert scripts\shared\shared.gsh;
-
-#using scripts\zm\gametypes\_globallogic;
-#using scripts\zm\gametypes\_globallogic_score;
-
 
 function init()
 {
     level thread xp_connect_monitor();
-    level thread round_end_save();
+    level thread round_end_save();    
 }
 
 function xp_connect_monitor()
@@ -164,6 +154,7 @@ function on_kill(hit_location)
     self thread add_xp(amount, hit_location);
 
     self notify("xp_changed", amount, hit_location);
+    self LUINotifyEvent(&"xp_updated", amount);
 }
 
 function save_xp()
