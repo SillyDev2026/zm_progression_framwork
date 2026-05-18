@@ -1,0 +1,13 @@
+index,type,name,resident,streamed,parentStack
+1,string,,0,0,||assetlist
+2,scriptparsetree,scripts/zm/_load.gsc,4305,0,|zone_source/zm_mod.zone|csv
+3,scriptparsetree,scripts/zm/main.gsc,308,0,|zone_source/zm_mod.zone|csv
+4,scriptparsetree,scripts/zm/xp_system.gsc,3934,0,|zone_source/zm_mod.zone|csv
+5,scriptparsetree,scripts/zm/_zm_score.gsc,10976,0,|zone_source/zm_mod.zone|csv
+6,scriptparsetree,scripts/zm/xp_hud.gsc,3810,0,|zone_source/zm_mod.zone|csv
+7,scriptparsetree,scripts/zm/_zm_score.csc,396,0,|zone_source/zm_mod.zone|csv
+8,scriptparsetree,scripts/zm/_load.csc,2668,0,|zone_source/zm_mod.zone|csv
+9,rawfile,dummy.cfg,20,0,|zone_source/zm_mod.zone|csv
+10,keyvaluepairs,zm_mod,1114,0,||assetlist
+11,bgcache,zm_mod,529,0,||assetlist
+12,assetlist,,160,0,

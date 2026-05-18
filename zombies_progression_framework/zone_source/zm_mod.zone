@@ -1,0 +1,14 @@
+>mode,zm
+>type,common
+
+#include "zm_mod.class"
+
+scriptparsetree,scripts/zm/_load.gsc
+scriptparsetree,scripts/zm/main.gsc
+scriptparsetree,scripts/zm/xp_system.gsc
+scriptparsetree,scripts/zm/_zm_score.gsc
+scriptparsetree,scripts/zm/xp_hud.gsc
+scriptparsetree,scripts/zm/_zm_score.csc
+scriptparsetree,scripts/zm/_load.csc
+
+rawfile,dummy.cfg
