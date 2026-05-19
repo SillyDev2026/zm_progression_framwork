@@ -212,7 +212,7 @@ function get_xp_stat(player, stat_name)
 {
     key = get_player_key(player, stat_name);
 
-    value = GetDVarInt(key);
+    value = GetDVarFloat(key);
 
     return value;
 }
@@ -221,7 +221,7 @@ function set_xp_stat(player, stat_name, value)
 {
     key = get_player_key(player, stat_name);
 
-    SetDVar(key, int(value));
+    SetDvar(key, int(value));
 }
 
 function get_player_key(player, stat)
@@ -230,6 +230,7 @@ function get_player_key(player, stat)
 
     if (!isdefined(guid))
         guid = player GetGuid();
+        
 
     return "xp_" + guid + "_" + stat;
 }
