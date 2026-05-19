@@ -182,4 +182,4 @@ function xp_levelup_popup()
     wait 0.5;
 
     hud destroy();
-}ss
+}
